@@ -1,0 +1,325 @@
+<html>
+
+	<head>
+		<title>Strona główna</title>
+		<!-- head - informacje dla przeglądarki, skrypty, style -->
+		<meta charset="UTF-8">
+		
+		<style>
+		/* style z W3 - start */
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  animation: colorChange 4s infinite;
+  font-size: 50px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  font-size:50px ;
+  animation: colorChange 4s infinite;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  animation: colorChange 4s infinite;
+  font-size:50px ;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  
+  
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+		
+		/*style z W3 - stop */
+		
+		
+			* {
+				margin: 0;
+			}
+		
+			.bg-green {
+				background:linear-gradient(to right,#49ff80,#5fa890);
+				color: #fff;
+				padding: 10px;
+				text-align: center;
+				font-family: sans-serif;
+				font-size: 10px;
+			}
+			
+			#info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    min-height: 25px;
+    font-size: medium;
+    color: #222;
+}
+			
+#nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 15px;
+	column-gap: 20px;
+	overflow-x: auto;
+    
+    background:linear-gradient(to left,#c8c9c8,#49ff80) ;
+}
+
+#nav > div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+    
+}
+			
+			body {
+				min-height: 120vh;
+                background: linear-gradient(to right,#5fa890, #3d965b);
+			}
+
+.allcard{
+    display: flex;
+justify-content: center;	
+}
+.card{
+  display: flex;
+    width:290px ;
+    height:350px;
+    margin:4px ;
+    padding: 4px;
+    background:linear-gradient(to bottom,#abe2b9,#5fa890);
+    border:4px solid black;
+    justify-content: center;
+}
+.card:hover{
+    transform: scale(1.5,1.5);
+    transition: 2s;
+}
+.opis{
+  text-align: center;
+  bottom: 20px;
+}
+
+
+@keyframes colorChange{
+  0% {color:red;}
+  25% {color:orange;}
+  50% {color:yellow;}
+  75% {color:green;}
+  100% {color:blue;}
+}
+		</style>
+	</head>
+	
+	<body>
+	
+		<header>
+			<div id="info" class="bg-green">Curabitur ac felis arcu. Sed euismod, urna eu tincidunt consectetur, nisi nisl lacinia mi, <strong>a tincidunt nisi nisl sit amet urna</strong></div>
+			
+			<div id="nav">
+			  <div>
+			    <div>
+			      <a href="tel:500600700">500600700</a>
+			    </div>
+			    <div>
+			      <a href="mailto:mail@example.com">mail@example.com</a>
+			    </div>
+			  </div>
+			  <div>
+			    <div>
+			      <a href="https://www.google.pl/" target="_blank">Google</a>
+			    </div>
+				<div>
+			      <a href="https://synergia.librus.pl/interfejs_lekcyjny" target="_blank">Librus</a>
+			    </div>
+			  </div>
+			</div>
+			<hr></hr>
+			
+			<div id="main-slider">
+        <div class="tex">
+			  <h2 style="text-align:center">Slideshow Gallery</h2>
+        </div>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="pobrane (4).jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="ptaki-maja-zdolnosc-swiadomego-myslenia.jpeg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="dudek.webp" style="width:100%; height:500px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="AdobeStock_93215029 słowik szary.jpg.webp" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="46161480_46160623.jpg.webp" style="width:100%; height:500px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="ptaki-domowe-hodowla.webp" style="width:100%; height:500px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+ 
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+			</div>
+		</header>
+		
+<main>
+  <br>
+    <div class="allcard">
+            <div class="card">
+              <img  src="pobrane (4).jpg" style="width:280; height:180;">
+                <div class="opis"></div>
+            </div>
+            <div class="card">
+              <img  src="ptaki-maja-zdolnosc-swiadomego-myslenia.jpeg" style="width:280; height:180;">
+            </div>
+            <div class="card">
+              <img  src="dudek.webp" style="width:280; height:180;">
+            </div>
+            <div class="card">
+              <img  src="AdobeStock_93215029 słowik szary.jpg.webp" style="width:280; height:180;">
+            </div>
+            <div class="card">
+              <img  src="46161480_46160623.jpg.webp" style="width:280; height:180;">
+            </div>
+            <div class="card">
+              <img  src="ptaki-domowe-hodowla.webp" style="width:280; height:180;">
+
+            </div>
+    </div>
+</main>
+		
+		<footer>
+		</footer>
+	
+	</body>
+
+</html>
